@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+* {
+  list-style-type: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+:root {
+  --fs-xsm: 14px;
+  --fs-2xsm: 15px;
+  --fs-sm: 14px;
+  --fs-2sm: 17px;
+  --fs-md: 20px;
+  --fs-2md: 24px;
+  --fs-lg: 30px;
+  --fs-2lg: 32px;
+  --fs-xl: 40px;
+  --fs-2xl: 42px;
+  --fs-3xl: 33px;
+  --fs-4xl: 39px;
+  --fs-5xl: 24px;
+  /****COLORS*****/
+  --clr-lightdark: #5C5C5C;
+  --clr-green: #1AD079;
+  --clr-grey: #4A4A4A;
+  --clr-dark: #B5B8C4;
+  --clr-lightgrey: #B8BCC7;
+  --clr-textdark: #4D4D4D;
+  --clr-lightwhite: #B4B7C5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text_green {
+  color: var(--clr-green) !important;
+}
+
+.fs_xsm {
+  font-size: var(--fs-xsm)
+}
+
+.fs_2xsm {
+  font-size: var(--fs-2xsm)
+}
+
+.fs_sm {
+  font-size: var(--fs-sm);
+}
+
+.fs_2sm {
+  font-size: var(--fs-2sm);
+}
+
+.fs_md {
+  font-size: var(--fs-md);
+}
+
+.fs_2md {
+  font-size: var(--fs-2md);
+}
+
+.fs_lg {
+  font-size: var(--fs-lg);
+}
+
+.fs_2lg {
+  font-size: var(--fs-2lg);
+}
+
+.fs_xl {
+  font-size: var(--fs-xl);
+}
+
+.fs_2xl {
+  font-size: var(--fs-2xl);
+}
+
+.fs_3xl {
+  font-size: var(--fs-3xl);
+}
+
+.fs_4xl {
+  font-size: var(--fs-4xl);
+}
+
+.fs_5xl {
+  font-size: var(--fs-5xl);
+}
+
+.bg_grey {
+  background-color: #F7F7F7 !important;
+}
+
+.bg_darkblue {
+  background-color: #07133B;
+}
+
+.text_lightblack {
+  color: #5C5C5C !important;
+}
+
+.text_dark {
+  color: var(--clr-textdark) !important;
+}
+
+.text_grey {
+  color: var(--clr-grey) !important;
+}
+
+.text_lightdark {
+  color: var(--clr-textdark) !important;
+}
+
+@media (min-width:576px) {
+  :root {
+    --fs-xsm: 14px;
+    --fs-2xsm: 15px;
+    --fs-sm: 16px;
+    --fs-2sm: 17px;
+    --fs-md: 20px;
+    --fs-2md: 24px;
+    --fs-lg: 30px;
+    --fs-2lg: 32px;
+    --fs-xl: 40px;
+    --fs-2xl: 42px;
+    --fs-3xl: 45px;
+    --fs-4xl: 49px;
+    --fs-5xl: 45px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width:768px) {
+  :root {
+    --fs-xsm: 14px;
+    --fs-2xsm: 15px;
+    --fs-sm: 16px;
+    --fs-2sm: 17px;
+    --fs-md: 20px;
+    --fs-2md: 24px;
+    --fs-lg: 30px;
+    --fs-2lg: 32px;
+    --fs-xl: 40px;
+    --fs-2xl: 42px;
+    --fs-3xl: 45px;
+    --fs-4xl: 49px;
+    --fs-5xl: 60px;
   }
 }

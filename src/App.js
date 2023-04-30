@@ -12,21 +12,25 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HowStarted from './components/HowStarted';
 import DemoSlider from './components/DemoSlider';
+import Dslider from './components/Dslider';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
     <div>
       <div className='overflow-hidden'>
-        {/* <MyNav />
+        <MyNav />
         <MyHeader />
         <Identify />
         <Demo />
         <Platform />
         <Deal />
-        <HowStarted /> */}
-        <DemoSlider/>
-        {/* <UsersReview /> */}
+        <HowStarted />
+        {/* <DemoSlider /> */}
+        {/* <Dslider/> */}
+        <UsersReview />
+        <Footer/>
       </div>
     </div>
   );

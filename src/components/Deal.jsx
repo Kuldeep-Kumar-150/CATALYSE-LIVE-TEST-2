@@ -4,9 +4,9 @@ import homeImg from '../assets/img/web/home_img.webp'
 import videoIcon from '../assets/img/svg/green_video_icon.svg'
 const Deal = () => {
     return (
-        <section>
+        <section className='mb-1 pb-md-3'>
             <Container className='custom_container'>
-                <Row className=' justify-content-between align-items-center'>
+                <Row className=' justify-content-between align-items-center mb-5'>
                     <Col sm={6} lg={3}><img className='w-100' src={homeImg} alt="homeImg" /></Col>
                     <Col sm={6} lg={3} className='text-center text-sm-start mt-4'>
                         <p className='fs_sm fw-normal'>Leverage big data and artificial intelligence to identify your next Client</p>

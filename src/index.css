@@ -237,6 +237,40 @@ body {
   animation: earthImg linear infinite 4s;
 }
 
+.container_2 {
+  max-width: 680px !important;
+  padding: 0 12px !important;
+  margin: 0 auto 0 0 !important;
+}
+
+.w_60 {
+  max-width: 60% !important;
+}
+
+.w_40 {
+  max-width: 40% !important;
+}
+
+.sign_up_btn {
+  padding: 12px 44px;
+  border-radius: 4px;
+}
+
+.submit_btn_footer {
+  background-color: #1AD079;
+  border: none !important;
+  padding: 13px 0 !important;
+  border-radius: 4px;
+  margin-top: 3px !important;
+  cursor:pointer !important;
+}
+
+.financial_service_radio_btn {
+  border: 1px solid #1AD079;
+  border-radius: 4px;
+  padding: 12px 0 !important;
+}
+
 /*******Modal**************/
 .modal-dialog {
   max-width: 94% !important;
@@ -253,10 +287,15 @@ body {
 .accordion-button {
   background-color: #07133B !important;
   color: white !important;
+  padding: 10px 10px 10px 0 !important;
+  border: none !important;
 }
-.accordion-body{
+
+.accordion-body {
   padding-top: 5px !important;
+  border: unset !important;
 }
+
 .accordion-button:not(.collapsed) {
   color: white !important;
   background-color: transparent !important;
@@ -264,9 +303,7 @@ body {
 }
 
 .accordion-button:focus {
-  z-index: 3;
   border-color: none !important;
-  outline: 0;
   box-shadow: none !important;
 }
 
@@ -278,22 +315,35 @@ body {
 
 .accordion-button:not(.collapsed)::after {
   background-image: url("./assets/img/svg/accordion_open_arrow.svg") !important;
-  transform: unset !important;
+  transform: rotate(180deg) !important;
+  transition: 0.2s ease-in-out !important;
 }
 
 .accordion-button::after {
-  flex-shrink: 0;
-  width: var(--bs-accordion-btn-icon-width);
-  height: var(--bs-accordion-btn-icon-width);
-  margin-left: auto;
   content: "";
-  background-image:url("./assets/img/svg/accordion_close_arrow.svg") !important;
-  background-repeat: no-repeat;
-  background-size: var(--bs-accordion-btn-icon-width);
-  transition: var(--bs-accordion-btn-icon-transition);
+  background-image: url("./assets/img/svg/accordion_close_arrow.svg") !important;
   transform: rotate(180deg) !important;
+  margin-top: -23px !important;
 }
 
+.accordion_numbers {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px !important;
+}
+
+.accordion_numbers_active {
+  background-color: #1AD079 !important;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px !important;
+}
+
+/************ACCORDION-END*****************/
 @keyframes earthImg {
   50% {
     transform: scale(1.2);
@@ -315,6 +365,13 @@ body {
 @media (min-width:576px) {
   .getstarted_btn_header {
     padding: 13px 46px;
+  }
+
+  .accordion-button {
+    background-color: #07133B !important;
+    color: white !important;
+    padding: 13px 13px 13px 0 !important;
+    border: none !important;
   }
 
   .overview_img {

@@ -10,7 +10,7 @@ import circle from '../assets/img/svg/circle_black_green.svg'
 import notesIcon from '../assets/img/svg/notes.svg'
 const Platform = () => {
     return (
-        <section className='py-5 my-5'>
+        <section className='py-5 mt-5 mt-sm-2'>
             <Container className='custom_container'>
                 <Row>
                     <Col md={3}>
@@ -66,7 +66,7 @@ const Platform = () => {
                 </Row>
 
                 {/************SECOND-ROW*****************/}
-                <Row className='our_platform_second_row'>
+                <Row className='our_platform_second_row justify-content-center'>
                     <Col sm={6} md={4} className='text-center'>
                         <img src={imageIcon} alt="images" />
                         <p className='fs_sm fw-normal'>Harness the power of 30 million data points to reach your highest converting target market</p>

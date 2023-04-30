@@ -19,7 +19,7 @@ const Platform = () => {
                     <Col md={9}>
                         <Row>
                             <Col md={6} className='px-md-1'>
-                                <div className="h-100 bg_grey p-4 p-lg-5 d-flex flex-column justify-content-between rounded-3">
+                                <div className="our_platform_cards h-100 bg_grey p-4 p-lg-5 d-flex flex-column justify-content-between rounded-3">
                                     <div className="d-flex align-items-center justify-content-between">
                                         <p className='fs_md fw-semibold mb-0'>Exclusive</p>
                                         <img height={50} width={50} src={diamondImg} alt="diamondImg" />
@@ -28,7 +28,7 @@ const Platform = () => {
                                 </div>
                             </Col>
                             <Col md={6} className='px-md-1 mt-3 mt-md-0'>
-                                <div className="h-100 bg_grey p-4 p-lg-5 d-flex flex-column justify-content-between rounded-3">
+                                <div className="our_platform_cards h-100 bg_grey p-4 p-lg-5 d-flex flex-column justify-content-between rounded-3">
                                     <div className="d-flex align-items-center justify-content-between">
                                         <p className='fs_md fw-semibold mb-0'>In your <span className='d-block'>backyard</span></p>
                                         <img height={50} width={50} src={trainLine} alt="trainLine" />
@@ -41,7 +41,7 @@ const Platform = () => {
                     <Col md={9}>
                         <Row>
                             <Col md={6} className='px-md-1 py-2 mt-2 mt-md-0'>
-                                <div className="bg_grey p-4 p-lg-5 d-flex flex-column justify-content-between h-100 rounded-3">
+                                <div className="our_platform_cards bg_grey p-4 p-lg-5 d-flex flex-column justify-content-between h-100 rounded-3">
                                     <div className="d-flex align-items-center justify-content-between">
                                         <p className='fs_md fw-semibold'>High <span className='d-block'>net worth</span></p>
                                         <img width={75} height={61} src={dollarImg} alt="images" />
@@ -50,7 +50,7 @@ const Platform = () => {
                                 </div>
                             </Col>
                             <Col md={6} className='px-md-1 py-2'>
-                                <div className="bg_grey p-4 p-lg-5 d-flex flex-column justify-content-between h-100 rounded-3">
+                                <div className="our_platform_cards bg_grey p-4 p-lg-5 d-flex flex-column justify-content-between h-100 rounded-3">
                                     <div className="d-flex align-items-center justify-content-between">
                                         <p className='fs_md fw-semibold'>High <span className='d-block'>propensity</span></p>
                                         <img width={56} height={56} src={percentageInCircle} alt="images" />

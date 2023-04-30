@@ -7,7 +7,7 @@ import earthImg from '../assets/img/svg/earth_img.svg'
 import worldMap from '../assets/img/web/world_map.webp'
 import earthMap from '../assets/img/svg/earth_map_img.svg'
 const UsersReview = () => {
-    const mySlider = useRef("")
+    const mySlider = useRef("");
     console.log(mySlider)
     var settings = {
         dots: true,
@@ -32,6 +32,8 @@ const UsersReview = () => {
     return (
         <section className='my-5 py-5'>
             <Container className='custom_container position-relative'>
+                <div className='people_reviews_section_positon_box position-absolute'></div>
+                <div className='people_reviews_section_positon_box2 position-absolute'></div>
                 <img onClick={() => mySlider.current.slickPrev()} className='slider_prev_arrow position-absolute crusor_pointer' src={prevArrow} alt="prevArrow" />
                 <img onClick={() => mySlider.current.slickNext()} className='slider_next_arrow position-absolute crusor_pointer' src={nextArrow} alt="nextArrow" />
                 <h6 className='text-center fs_3xl fw-semibold mb-5'>See what our users say </h6>
@@ -42,7 +44,7 @@ const UsersReview = () => {
                                 <div className="d-flex align-items-center">
                                     <p className='text_green fs_sm fw-semibold users_name_logo mb-0 d-flex justify-content-center align-items-center'>RC</p>
                                     <div className='ms-4'>
-                                        <p className='fs_md fw-semibold mb-0'>Richard Chung</p>
+                                        <p className='fs_md fw-semibold mb-0 z_index_10'>Richard Chung</p>
                                         <p className='fs_xsm fw-normal text_lightdark mb-0'>Killer Williams</p>
                                     </div>
                                 </div>
@@ -54,7 +56,7 @@ const UsersReview = () => {
                             <p className='fs_sm fw-normal pt-4'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The   'Content here, content here', making it look like readable English.</p>
                         </div>
                     </div>
-                    <div className="px-2">
+                    <div className="px-2 z_index_10">
                         <div className="bg_white px-2 p-sm-5 py-2 h-100 rounded-3">
                             <div className="d-flex align-items-center justify-content-between">
                                 <div className="d-flex align-items-center">
@@ -72,7 +74,7 @@ const UsersReview = () => {
                             <p className='fs_sm fw-normal pt-4'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The   'Content here, content here', making it look like readable English.</p>
                         </div>
                     </div>
-                    <div className="px-2">
+                    <div className="px-2 z_index_10">
                         <div className="bg_white px-2 p-sm-5 py-2 h-100 rounded-3">
                             <div className="d-flex align-items-center justify-content-between">
                                 <div className="d-flex align-items-center">

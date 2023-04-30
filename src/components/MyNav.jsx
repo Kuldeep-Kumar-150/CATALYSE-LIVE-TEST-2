@@ -15,8 +15,8 @@ const MyNav = () => {
         <div className="d-flex align-items-center justify-content-between">
           <div className='d-flex align-items-center gap-5'>
             <a href="#" className='z_index_10'><img src={pageLogo} alt="pageLogo" /></a>
-            <a href="#" className='fs_sm text-black fw-semibold d-flex align-items-center d-none d-lg-flex'><img className='me-2' src={finance} alt="finance" />Financial Services</a>
-            <a href="#" className='fs_sm text-black fw-semibold d-flex align-items-center d-none d-lg-flex'><img className='me-2' src={realEstate} alt="finance" />Real Estate</a>
+            <a href="#" className='navlinks position-relative fs_sm text-black fw-semibold d-flex align-items-center d-none d-lg-flex'><img className='me-2' src={finance} alt="finance" />Financial Services</a>
+            <a href="#" className='navlinks position-relative fs_sm text-black fw-semibold d-flex align-items-center d-none d-lg-flex'><img className='me-2' src={realEstate} alt="finance" />Real Estate</a>
           </div>
           <div className={nav === false ? "d-flex flex-column align-items-center justify-content-center text-center hide_nav d-lg-none " : " d-lg-none open_nav  d-flex flex-column align-items-center justify-content-center text-center"}>
             <div className='d-flex flex-column'>

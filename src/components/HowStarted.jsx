@@ -60,8 +60,8 @@ const HowStarted = () => {
                         <img className={image == 3 ? "d-block w-100" : "d-none w-100"} src={card3} alt="cards" />
                         <img className={image == 4 ? "d-block w-100" : "d-none w-100"} src={card4} alt="cards" />
                         <div className="d-flex flex-column-reverse flex-sm-row align-items-sm-center justify-content-between mt-4">
-                            <span>
-                                <a href="/" className='mt-3 mt-sm-0 sign_up_btn bg_green fs_sm fw-semibold text-white d-inline-block text-nowrap'>Sign up</a>
+                            <span className='position-relative'>
+                                <a href="/" className='mt-3 z_index_10 mt-sm-0 sign_up_btn bg_green fs_sm fw-semibold text-white d-inline-block text-nowrap'>Sign up</a>
                             </span>
                             <a href="/" className='fs_sm fw-normal clr_light_dark d-block ps-md-3'>Register in under 5 minutes.</a>
                         </div>

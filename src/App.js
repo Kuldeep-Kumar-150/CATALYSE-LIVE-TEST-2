@@ -20,17 +20,17 @@ function App() {
   return (
     <div>
       <div className='overflow-hidden'>
-        <MyNav />
+        {/* <MyNav />
         <MyHeader />
         <Identify />
         <Demo />
         <Platform />
+        <DemoSlider />
         <Deal />
-        <HowStarted />
-        {/* <DemoSlider /> */}
-        {/* <Dslider/> */}
-        <UsersReview />
-        <Footer/>
+        <HowStarted /> */}
+        <Dslider/>
+        {/* <UsersReview />
+        <Footer /> */}
       </div>
     </div>
   );

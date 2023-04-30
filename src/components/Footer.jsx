@@ -1,224 +1,97 @@
 import React from 'react'
 
 import footer_logo from "../assets/img/svg/footer_logo.svg";
-import line_footer from "../assets/img/svg/footer_line.svg";
+import { Col, Container, Row } from 'react-bootstrap';
 const Footer = () => {
     return (
         <>
-            <footer className="bg_darkblue position-relative">
-                <section className="mx-3 mb-2">
-                    <div className=" custom_container py-5 ">
-                        <div className="row justify-content-between">
-                            <div className="col-lg-7 mt-3 mt-lg-0">
-                                <form className="row">
-                                    <div className="mt-3 mt-md-0 col-lg-7">
-                                        <input
-                                            className=" bg_lightblue w-100 ff_Segoe fw-semibold text-white opacity-75 border-0 py-2 px-2"
-                                            name="full  name"
-                                            type="text"
-                                            placeholder="Name"
-                                        />
-                                        <input
-                                            className=" bg_lightblue w-100 ff_Segoe fw-semibold text-white opacity-75 border-0 py-2 px-2 mt-2"
-                                            id="email"
-                                            name="email"
+            <footer className='py-5 bg_darkblue m-1 m-md-3 rounded-3'>
+                <Container className=' custom_container mt-lg-4'>
+                    <Row className='pb-2 pb-md-5 align-items-center align-items-lg-start'>
+                        <Col md={7}>
+                            <Row>
+                                <Col md={7} className='pe-2'>
+                                    <form>
+                                        <input className='w-100 footer_input' type="text" placeholder='Name' />
+                                        <input className='w-100 footer_input mt-2' type="email" placeholder='Email' />
 
-                                            type="email"
-                                            placeholder="Email"
-                                        />
-
-                                        <div className="d-flex mt-2">
-                                            <div className=" crusor_pointer financial_service_radio_btn text-nowrap col-6 border_2_green py-2 radio_force">
-                                                <input
-                                                    className="crusor_pointer bg_lightblue ff_Segoe fw-semibold text-white opacity-75 rounded-5 py-2 px-2 ms-2"
-                                                    id="Financial Services"
-                                                    name="Financial Services"
-
-                                                    type="radio"
-                                                    value="Financial Services"
-                                                />
-                                                <label
-                                                    className="crusor_pointer ms-3 ff_Segoe fw-semibold fs_16 text-white opacity-75 text-nowrap"
-                                                    for="Financial Services"
-                                                >
-                                                    Financial Services
-                                                </label>
+                                        <div className="d-lg-flex mt-2">
+                                            <div className='text-center financial_service_radio_btn text-nowrap'>
+                                                <input name="form" type="radio" id='srvices' />
+                                                <label htmlFor="srvices" className='text_green fs_sm fw-semibold ps-3'>Financial Services</label>
                                             </div>
-                                            <div className="text-nowrap col-6">
-                                                <div className="financial_service_radio_btn crusor_pointer ms-2 text-center">
-                                                    <input
-                                                        className=" crusor_pointer bg_lightblue ff_Segoe fw-semibold text-white opacity-75 rounded-5 py-2 px-2 ms-2"
-                                                        id="Real Estate"
-                                                        name="Financial Services"
-                                                        type="radio"
-                                                        value="Real Estate"
-                                                    />
-                                                    <label
-                                                        className="ms-2 ff_Segoe crusor_pointer fw-semibold fs_16 text-white opacity-75 text-nowrap "
-                                                        for="Real Estate"
-                                                    >
-                                                        Real Estate
-                                                    </label>
-                                                </div>
+                                            <div className='text-center ral_estate_radio_btn ms-lg-2 mt-2 text-nowrap mt-lg-0'>
+                                                <input name="form" type="radio" id='srvicess' />
+                                                <label htmlFor="srvicess" className='text-white opacity-75 fs_sm fw-semibold ps-3 ps-md-1'>Real Estate</label>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="mt-3 mt-md-0 col-lg-5 ps-lg-0">
-                                        <textarea
-                                            placeholder="Message.."
-                                            cols="35"
-                                            rows="3"
-                                            className="bg_lightblue border-0 p-2  fw-semibold text-white opacity-75 w-100"></textarea>
-                                        <button type="submit" className="submit_btn_footer w-100 fs_sm fw-semibold text-white">
-                                            Submit
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
 
-                            <div className="col-lg-4 mt-3 mt-lg-0">
-                                <h5 className=" ff_Segoe fs_40 fw-semibold text-white m-0">
-                                    Contact us
-                                </h5>
-                                <p className=" ff_Segoe m-0 fs_16 fw-normal text-white opacity-75 pt_22 col-lg-10">
-                                    Our Predictive Analytics utilize a combination of event-driven
-                                    data, historical data.
-                                </p>
+                                    </form>
+                                </Col>
+                                <Col md={5} className='pe-0 ps-2 mt-2 mt-md-0'>
+                                    <textarea className='footer_input w-100' cols="35" rows="3" placeholder='Message..'></textarea>
+                                    <button className='w-100 submit_btn_footer fs_sm fw-semibold text-white'>Submit</button>
+                                </Col>
+                            </Row>
+                        </Col>
+                        <Col md={5} className='ps-md-5 mt-3 mt-md-0'>
+                            <h6 className='ps-md-5 fs_xl fw-semibold text-white'>Contact us</h6>
+                            <p className='ps-md-5 fs_sm fw-normal opacity-75 text-white'>Our Predictive Analytics utilize a combination of event-driven data, historical data.</p>
+                        </Col>
+                    </Row>
+                    <div className="hr_footer my-2 my-xl-5"></div>
+                    <Row className='py-5'>
+                        <Col md={4}>
+                            <a href="#">
+                                <img src={footer_logo} alt="footer_logo" />
+                            </a>
+                            <a className=" fs_sm fw-semibold text-white d-block mt-3" href="mailto:info@catalyzeai.com">info@catalyzeai.com</a>
+                            <a className=" fs_sm fw-semibold text-white" href="tel:+(941) 867-1761">(941) 867-1761</a>
+                        </Col>
+                        <Col md={8} className='mt-sm-4 mt-md-0'>
+                            <Row>
+                                <Col sm={4}>
+                                    <ul className='p-0 m-0'>
+                                        <li className='fs_sm fw-semibold text-white'>Financial Services</li>
+                                        <li className='mt-3'><a className='fs_sm fw-semibold text-white' href="/">Pricing</a></li>
+                                        <li className='mt-2 pt-1'><a className='position-relative fs_sm fw-semibold text-white' href="/">Blog</a></li>
+                                    </ul>
+                                </Col>
+                                <Col sm={4}>
+                                    <ul className='p-0 m-0'>
+                                        <li className='fs_sm fw-semibold text-white'>Real Estate</li>
+                                        <li className='mt-3'><a className='position-relative fs_sm fw-semibold text-white' href="/">Pricing</a></li>
+                                        <li className='mt-2 pt-1'><a className='fs_sm fw-semibold text-white' href="/">Blog</a></li>
+                                    </ul>
+                                </Col>
+                                <Col sm={4}>
+                                    <ul className='p-0 m-0'>
+                                        <li className='position-relative fs_sm fw-semibold text-white'>LinkedIn</li>
+                                    </ul>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                    <Row className='mt-sm-4'>
+                        <Col md={6} className='d-flex flex-column flex-lg-row align-items-start justify-content-between'>
+                            <div>
+                                <p className='fs_xsm fw-normal text-white opacity-75 footer_links position-relative crusor_pointer text-nowrap'>All rights reserved.©20022 Catalyze AI</p>
                             </div>
-                        </div>
-                    </div>
-                    <hr className="hr_footer" />
-                    <div className="custom_container py-5 position-relative">
-                        <div className="row ">
-                            <div className=" mt-3 my-lg-0 col-sm-6 col-lg-4">
-                                <li>
-                                    <a href="#">
-                                        <img src={footer_logo} alt="footer_logo" />
-                                    </a>
-                                </li>
-                                <li className="mt-2">
-                                    <a
-                                        className=" ff_segoe fs_16 fw-semibold text-white"
-                                        href="mailto:raviatal44@gmail.com"
-                                    >
-                                        info@catalyzeai.com
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        className=" ff_segoe fs_16 fw-semibold text-white"
-                                        href="tel:+001"
-                                    >
-                                        (941) 867-1761
-                                    </a>
-                                </li>
+                            <div>
+                                <p className='fs_xsm fw-normal text-white opacity-75 footer_links position-relative crusor_pointer text-nowrap'>Do not sell my data</p>
                             </div>
-                            <div className=" mt-3 my-lg-0 col-sm-6 col-lg-3">
-                                <li>
-                                    <a
-                                        className=" ff_segoe fs_16 fw-semibold text-white"
-                                        href="#"
-                                    >
-                                        Real Estate
-                                    </a>
-                                </li>
-                                <li className="mt-2">
-                                    <a
-                                        className=" ff_segoe fs_16 fw-semibold text-white"
-                                        href="#"
-                                    >
-                                        Pricing
-                                    </a>
-                                </li>
-                                <li className=" ">
-                                    <a
-                                        className=" ff_segoe fs_16 fw-semibold text-white"
-                                        href="#"
-                                    >
-                                        Blog
-                                    </a>
-                                </li>
+                        </Col>
+                        <Col md={6} className='d-flex flex-column flex-lg-row align-items-start justify-content-between justify-content-md-end'>
+                            <div className='me-sm-5'>
+                                <p className='fs_xsm fw-normal text-white opacity-75 footer_links position-relative crusor_pointer'>Terms & Conditions</p>
                             </div>
-                            <div className=" mt-3 my-lg-0 col-sm-6 col-lg-3">
-                                <li>
-                                    <a
-                                        className=" ff_segoe fs_16 fw-semibold text-white"
-                                        href="#"
-                                    >
-                                        Financial Services
-                                    </a>
-                                </li>
-                                <li className="mt-2">
-                                    <a
-                                        className=" ff_segoe fs_16 fw-semibold text-white"
-                                        href="#"
-                                    >
-                                        Pricing
-                                    </a>
-                                </li>
-                                <li className=" ">
-                                    <a
-                                        className=" ff_segoe fs_16 fw-semibold text-white"
-                                        href="#"
-                                    >
-                                        Blog
-                                    </a>
-                                </li>
+                            <div>
+                                <p className='fs_xsm fw-normal text-white opacity-75 footer_links position-relative crusor_pointer'>Privacy Policy</p>
                             </div>
-                            <div className=" mt-3 my-lg-0 col-sm-6 col-lg-1">
-                                <li>
-                                    <a
-                                        className=" ff_segoe fs_16 fw-semibold text-white"
-                                        href="#"
-                                    >
-                                        LinkedIn
-                                    </a>
-                                </li>
-                            </div>
-                        </div>
-                        <img
-                            className="z_index_2 w-100"
-                            src={line_footer}
-                            alt="line_footer"
-                        />
-                        <div className="row mt-5">
-                            <div className="col-md-6 mt-3 mt-lg-0 col-lg-4">
-                                <a
-                                    className=" ff_Segoe fw-normal fs_14 text-white opacity-75"
-                                    href="#"
-                                >
-                                    All rights reserved.©20022 Catalyze AI
-                                </a>
-                            </div>
-                            <div className="col-md-6 mt-3 mt-lg-0 col-lg-4">
-                                <a
-                                    className=" text-decoration-underline ff_Segoe fw-normal fs_14 text-white opacity-75"
-                                    href="#"
-                                >
-                                    Do not sell my data
-                                </a>
-                            </div>
-                            <div className="col-md-6 mt-3 mt-lg-0 col-lg-2">
-                                <a
-                                    className=" text-decoration-underline ff_Segoe fw-normal fs_14 text-white opacity-75"
-                                    href="#"
-                                >
-                                    Terms & Conditions
-                                </a>
-                            </div>
-                            <div className="col-md-6 mt-3 mt-lg-0 col-lg-2">
-                                <a
-                                    className=" text-decoration-underline ff_Segoe fw-normal fs_14 text-white opacity-75"
-                                    href="#"
-                                >
-                                    Privacy Policy
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div className="footer_white_circle position_set d-none d-lg-flex"></div>
-            </footer>
+                        </Col>
+                    </Row>
+                </Container>
+            </footer >
         </>
     )
 }

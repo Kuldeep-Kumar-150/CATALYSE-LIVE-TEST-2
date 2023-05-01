@@ -12,23 +12,35 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HowStarted from './components/HowStarted';
 import DemoSlider from './components/DemoSlider';
-import Dslider from './components/Dslider';
 import Footer from './components/Footer';
-
-
+import BackToTop from './components/BackToTop';
+import PreLoader from './components/PreLoader';
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 600,
+      delay: 100,
+    });
+  }, [])
   return (
     <div>
+      <PreLoader />
+      <BackToTop />
       <div className='overflow-hidden'>
-        <MyNav />
-        <MyHeader />
+        <div className='d-flex flex-column vh_100_xl'>
+          <MyNav />
+          <MyHeader />
+        </div>
         <Identify />
         <Demo />
         <Platform />
         <DemoSlider />
         <Deal />
         <HowStarted />
-        {/* <Dslider/> */}
         <UsersReview />
         <Footer />
       </div>

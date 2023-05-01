@@ -18,7 +18,7 @@ const Platform = () => {
                     </Col>
                     <Col md={9}>
                         <Row>
-                            <Col md={6} className='px-md-1'>
+                            <Col md={6} className='px-md-1' data-aos="zoom-in-up">
                                 <div className="our_platform_cards h-100 bg_grey p-4 p-lg-5 d-flex flex-column justify-content-between rounded-3">
                                     <div className="d-flex align-items-center justify-content-between">
                                         <p className='fs_md fw-semibold mb-0'>Exclusive</p>
@@ -27,7 +27,7 @@ const Platform = () => {
                                     <p className='fs_sm fw-normal text_grey mt-sm-5 pt-5'>200 exclusive prospects pushed to your platfrom monthly.</p>
                                 </div>
                             </Col>
-                            <Col md={6} className='px-md-1 mt-3 mt-md-0'>
+                            <Col md={6} className='px-md-1 mt-3 mt-md-0' data-aos="zoom-in-left">
                                 <div className="our_platform_cards h-100 bg_grey p-4 p-lg-5 d-flex flex-column justify-content-between rounded-3">
                                     <div className="d-flex align-items-center justify-content-between">
                                         <p className='fs_md fw-semibold mb-0'>In your <span className='d-block'>backyard</span></p>
@@ -40,7 +40,7 @@ const Platform = () => {
                     </Col>
                     <Col md={9}>
                         <Row>
-                            <Col md={6} className='px-md-1 py-2 mt-2 mt-md-0'>
+                            <Col md={6} className='px-md-1 py-2 mt-2 mt-md-0' data-aos="zoom-in-down">
                                 <div className="our_platform_cards bg_grey p-4 p-lg-5 d-flex flex-column justify-content-between h-100 rounded-3">
                                     <div className="d-flex align-items-center justify-content-between">
                                         <p className='fs_md fw-semibold'>High <span className='d-block'>net worth</span></p>
@@ -49,7 +49,7 @@ const Platform = () => {
                                     <p className='fs_sm fw-normal text_grey mt-md-5 pt-4 pt-md-5'>Average investable assets of $1.5 <span className='d-md-block'>million.</span></p>
                                 </div>
                             </Col>
-                            <Col md={6} className='px-md-1 py-2'>
+                            <Col md={6} className='px-md-1 py-2' data-aos="zoom-in-right">
                                 <div className="our_platform_cards bg_grey p-4 p-lg-5 d-flex flex-column justify-content-between h-100 rounded-3">
                                     <div className="d-flex align-items-center justify-content-between">
                                         <p className='fs_md fw-semibold'>High <span className='d-block'>propensity</span></p>
@@ -60,14 +60,14 @@ const Platform = () => {
                             </Col>
                         </Row>
                     </Col>
-                    <Col md={3} className='px-md-1'>
+                    <Col md={3} className='px-md-1' data-aos="zoom-out">
                         <img className='greencard pt-2' height={364} src={greenCard} alt="greenCard" />
                     </Col>
                 </Row>
 
                 {/************SECOND-ROW*****************/}
-                <Row className='our_platform_second_row justify-content-center'>
-                    <Col sm={6} md={4} className='text-center'>
+                <Row className='our_platform_second_row justify-content-center pt-md-5 mt-md-5'>
+                    <Col sm={6} md={4} className='text-center' data-aos="zoom-out-up">
                         <img src={imageIcon} alt="images" />
                         <p className='fs_sm fw-normal'>Harness the power of 30 million data points to reach your highest converting target market</p>
                     </Col>
@@ -75,7 +75,7 @@ const Platform = () => {
                         <img src={circle} alt="images" />
                         <p className='fs_sm fw-normal'>Increase your marketingdollars ROI</p>
                     </Col>
-                    <Col sm={6} md={4} className='text-center mt-4 mt-md-0'>
+                    <Col sm={6} md={4} className='text-center mt-4 mt-md-0' data-aos="zoom-out-down">
                         <img src={notesIcon} alt="images" />
                         <p className='fs_sm fw-normal mt-2'>A top of funnel marketing solution to fill your prospect pipeline</p>
                     </Col>

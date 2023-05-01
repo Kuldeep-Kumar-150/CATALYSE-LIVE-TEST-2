@@ -26,6 +26,26 @@
   transition: 0.3s ease-in-out;
 }
 
+.menu_icon_border {
+  border: 1px solid #F3F3F3;
+  border-radius: 8px;
+}
+
+.menu_icon {
+  display: block;
+  z-index: 15;
+}
+
+.menu_line {
+  width: 30px;
+  height: 2px;
+  background-color: #1AD079;
+}
+
+.z_index_21 {
+  z-index: 21 !important;
+}
+
 .signup_nav_btn:hover {
   background-color: #1AD079;
   color: white !important;
@@ -42,7 +62,7 @@
   position: absolute;
   left: -100%;
   top: 0;
-  background: #D4F4E6;
+  background: #C1EDD8;
   z-index: 10 !important;
   height: 100vh;
   transition: 0.3s linear;
@@ -53,7 +73,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  background: #D4F4E6;
+  background: #C1EDD8;
   z-index: 10 !important;
   height: 100vh;
   transition: 0.3s linear;
@@ -169,7 +189,7 @@
 
 .greencard {
   width: 100%;
-  height: 500px;
+  height: 371px;
 }
 
 .our_platform_second_row {
@@ -244,13 +264,17 @@ body {
 .approach_signup_btn {
   padding: 15px 62px;
   border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.approach_signup_btn:hover {
+  box-shadow: 0 0 10px 0 #1AD079 inset, 0 0 20px 2px #1AD079;
 }
 
 .sign_up_btn {
   padding: 12px 44px;
   border-radius: 4px;
   overflow: hidden;
-  /* position: relative; */
   transition: 0.2s ease-in-out;
 }
 
@@ -403,6 +427,7 @@ footer textarea {
   font-size: 16px;
   color: white;
   font-weight: 500;
+  background-color: #141F45;
   border-radius: 5px !important;
 }
 
@@ -447,18 +472,110 @@ footer textarea {
 }
 
 .our_platform_cards:hover {
-  background-color: #1AD079 !important;
+  background-color: #C1EDD8 !important;
 }
 
 footer li a:hover {
   color: #1AD079 !important;
 }
-.ml_1{
+
+.our_platform_number {
+  background-color: #141F45;
+}
+
+.our_platform_number_active {
+  background-color: #1AD079;
+}
+
+.ml_1 {
   margin-left: 1px !important;
 }
 
+.footer_position_img {
+  width: 150px;
+  height: 150px;
+  top: 30px;
+  right: 30px;
+  z-index: 0;
+  background: #3861EB;
+  filter: blur(125px);
+}
+
+.green_plus_img {
+  top: 37%;
+  right: 0;
+  animation: greenplusimg linear infinite 3s;
+}
+
+.payment_accepted_card {
+  right: -10%;
+  top: 20%;
+  animation: payment_card linear infinite 3s;
+}
+
+.backtotop_btn {
+  width: 50px;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10 !important;
+  animation: backtotop 2s linear infinite;
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #ffffff !important;
+  height: 100vh;
+  z-index: 50 !important;
+  width: 100vw;
+}
+
+.preloader_animation {
+  animation: preloader 4s linear infinite;
+}
 
 
+@keyframes preloader {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes backtotop {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes payment_card {
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+@keyframes greenplusimg {
+  50% {
+    transform: scale(1.3);
+  }
+}
 
 @keyframes earthImg {
   50% {
@@ -513,12 +630,17 @@ footer li a:hover {
     margin-top: 93px !important;
     margin-bottom: 26px !important;
   }
+
+  .greencard {
+    width: 100%;
+    height: 450px !important;
+  }
 }
 
 @media (min-width:767.99px) {
   .greencard {
     width: 100%;
-    max-height: 58%;
+    height: 97% !important;
   }
 
   .demo_section_bgimg {
@@ -550,7 +672,7 @@ footer li a:hover {
 
   .greencard {
     width: 100%;
-    max-height: 67%;
+    max-height: 98%;
   }
 
   footer textarea {
@@ -575,11 +697,15 @@ footer li a:hover {
 @media (min-width:1200px) {
   .greencard {
     width: 100%;
-    max-height: 68%;
+    max-height: 92%;
   }
 
   .demo_section_bgimg {
     margin-top: 117px !important;
     margin-bottom: 117px !important;
+  }
+
+  .vh_100_xl {
+    height: 100vh;
   }
 }

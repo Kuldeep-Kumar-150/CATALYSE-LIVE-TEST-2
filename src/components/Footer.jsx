@@ -1,19 +1,39 @@
 import React from 'react'
-
+import { useState } from 'react';
 import footer_logo from "../assets/img/svg/footer_logo.svg";
 import { Col, Container, Row } from 'react-bootstrap';
 const Footer = () => {
+    const initialvalue = {
+        name: "",
+        email: "",
+        message: "",
+        radiobtn: "",
+    }
+    const [formValue, setformValue] = useState(initialvalue);
+
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
+        setformValue({ ...formValue, [name]: value });
+    };
+    const formSubmit = (e) => {
+        e.preventDefault();
+        console.log(formValue)
+        setformValue(initialvalue)
+    }
+
     return (
         <>
-            <footer className='py-5 bg_darkblue m-1 m-md-3 rounded-3'>
+            <footer className='py-5 bg_darkblue m-1 m-md-3 rounded-3 position-relative'>
                 <Container className=' custom_container mt-lg-4'>
+                    <div className="footer_position_img position-absolute"></div>
                     <Row className='pb-2 pb-md-5 align-items-center align-items-lg-start'>
                         <Col md={7}>
-                            <Row>
-                                <Col md={7} className='pe-2'>
-                                    <form>
-                                        <input className='w-100 footer_input' type="text" placeholder='Name' />
-                                        <input className='w-100 footer_input mt-2' type="email" placeholder='Email' />
+                            <form onSubmit={formSubmit}>
+                                <Row data-aos="zoom-in">
+                                    <Col md={7} className='pe-2'>
+
+                                        <input required name='name' value={formValue.name} onChange={handleInputChange} className='w-100 footer_input' type="text" placeholder='Name' />
+                                        <input required name='email' value={formValue.email} onChange={handleInputChange} className='w-100 footer_input mt-2' type="email" placeholder='Email' />
 
                                         <div className="d-lg-flex mt-2">
                                             <div className='text-center financial_service_radio_btn text-nowrap'>
@@ -26,15 +46,16 @@ const Footer = () => {
                                             </div>
                                         </div>
 
-                                    </form>
-                                </Col>
-                                <Col md={5} className='pe-0 ps-2 mt-2 mt-md-0'>
-                                    <textarea className='footer_input w-100' cols="35" rows="3" placeholder='Message..'></textarea>
-                                    <button className='w-100 submit_btn_footer fs_sm fw-semibold text-white'>Submit</button>
-                                </Col>
-                            </Row>
+
+                                    </Col>
+                                    <Col md={5} className='ps-2 mt-2 mt-md-0'>
+                                        <textarea required name='message' value={formValue.message} onChange={handleInputChange} className='footer_input w-100' cols="35" rows="3" placeholder='Message..'></textarea>
+                                        <button className='w-100 submit_btn_footer fs_sm fw-semibold text-white'>Submit</button>
+                                    </Col>
+                                </Row>
+                            </form>
                         </Col>
-                        <Col md={5} className='ps-md-5 mt-3 mt-md-0'>
+                        <Col md={5} className='ps-md-5 mt-3 mt-md-0' data-aos="zoom-in-up">
                             <h6 className='ps-md-5 fs_xl fw-semibold text-white'>Contact us</h6>
                             <p className='ps-md-5 fs_sm fw-normal opacity-75 text-white'>Our Predictive Analytics utilize a combination of event-driven data, historical data.</p>
                         </Col>

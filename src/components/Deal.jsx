@@ -4,10 +4,10 @@ import homeImg from '../assets/img/web/home_img.webp'
 import videoIcon from '../assets/img/svg/green_video_icon.svg'
 const Deal = () => {
     return (
-        <section className='mb-1 pb-md-3'>
+        <section className='mb-1 pb-md-3 mt-5 pt-lg-5'>
             <Container className='custom_container'>
                 <Row className=' justify-content-between align-items-center mb-5'>
-                    <Col sm={6} lg={3}><img className='w-100' src={homeImg} alt="homeImg" /></Col>
+                    <Col data-aos="fade-up" sm={6} lg={3}><img className='w-100' src={homeImg} alt="homeImg" /></Col>
                     <Col sm={6} lg={3} className='text-center text-sm-start mt-4'>
                         <p className='fs_sm fw-normal'>Leverage big data and artificial intelligence to identify your next Client</p>
                         <p className='fs_sm fw-normal text_lightblack mt-4 mt-sm-3'>Compliment your current business development with Unconstrained predictive analytics.</p>
@@ -32,7 +32,7 @@ const Deal = () => {
                             </div>
                         </span>
                     </Col>
-                    <Col lg={3} className='text-center mt-4 mt-lg-0'>
+                    <Col lg={3} className='text-center mt-4 mt-lg-0' data-aos="fade-down">
                         <h4 className='fw-semibold fs_3xl pb-md-4'>Close <span className='d-lg-block'> More</span> Deals</h4>
                         <a href="#" className='fs_sm fw-semibold text_green mt-4 mt-lg-5 d-inline-block'>Book a demo <img className='ms-2' src={videoIcon} alt="videoIcon" /></a>
                     </Col>

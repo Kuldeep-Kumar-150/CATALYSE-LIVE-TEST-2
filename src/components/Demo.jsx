@@ -10,7 +10,7 @@ const Demo = () => {
     const handleShow = () => setShow(true);
 
     return (
-        <section className='py-1 position-relative'>
+        <section className='py-1 position-relative' data-aos="zoom-in">
             <Container className='custom_container'>
                 <div className="horizontel_blueline w-100 mb-5"></div>
                 <div className="demo_section_green_img position-absolute"></div>
@@ -26,11 +26,10 @@ const Demo = () => {
             <Container>
                 <Modal show={show} onHide={handleClose} backdrop="static" keyboard={false}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal title</Modal.Title>
+                        <Modal.Title>Rdaial-Code</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                            <iframe width="640" height="360" src="https://www.youtube.com/embed/nqye02H_H6I" title="4K Relaxing Nature Sounds - Short Video Clips of Nature" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                            </iframe>
+                        <iframe autoplay muted width="320" height="410" src="https://www.youtube.com/embed/5_Ojw-ZyHe4?autoplay=1" title="@radialcode" frameborder="0" allow=" autoplay;" allowfullscreen></iframe>
                     </Modal.Body>
                 </Modal>
             </Container>

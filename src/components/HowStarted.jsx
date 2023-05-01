@@ -4,7 +4,9 @@ import { Accordion } from 'react-bootstrap'
 import card1 from '../assets/img/web/ac-1.webp'
 import card2 from '../assets/img/web/ac-2.webp'
 import card3 from '../assets/img/web/ac-3.webp'
-import card4 from '../assets/img/web/ac-4.webp'
+import card4 from '../assets/img/web/ac-44.svg'
+import paymentAccepted from '../assets/img/svg/payment_accepted.svg'
+import greenPlusImg from '../assets/img/svg/green_plus_img.svg'
 const HowStarted = () => {
     const [image, setImage] = useState(1);
     const [activeNumber, setActiveNumber] = useState(1);
@@ -14,7 +16,7 @@ const HowStarted = () => {
             <Container className='custom_container'>
                 <h4 className='text-white text-center fs_3xl fw-semibold'>How to get started?</h4>
                 <Row className='py-3 py-sm-5 justify-content-between align-items-center'>
-                    <Col md={6}>
+                    <Col md={6} data-aos="fade-right">
                         <Accordion defaultActiveKey="0">
                             <Accordion.Item className='rounded-3' eventKey="0" onClick={() => setActiveNumber(1)}>
                                 <Accordion.Header onClick={() => setImage(1)}>
@@ -54,11 +56,17 @@ const HowStarted = () => {
                             </Accordion.Item>
                         </Accordion>
                     </Col>
-                    <Col md={5} className='ps-md-0 mt-4 mt-md-0'> 
-                        <img className={image == 1 ? "d-block w-100" : "d-none w-100"} src={card1} alt="cards" />
+                    <Col md={5} className='ps-md-0 mt-4 mt-md-0' data-aos="fade-left">
+                        <div className={image == 1 ? "position-relative d-block" : "d-none position-relative"}>
+                            <img className="w-100" src={card1} alt="cards" />
+                            <img className='green_plus_img position-absolute' src={greenPlusImg} alt="greenPlusImg" />
+                        </div>
                         <img className={image == 2 ? "d-block w-100" : "d-none w-100"} src={card2} alt="cards" />
                         <img className={image == 3 ? "d-block w-100" : "d-none w-100"} src={card3} alt="cards" />
-                        <img className={image == 4 ? "d-block w-100" : "d-none w-100"} src={card4} alt="cards" />
+                        <div className={image == 4 ? "d-block position-relative" : "position-relative d-none"}>
+                            <img className='w-100' src={card4} alt="card4" />
+                            <img className='payment_accepted_card position-absolute' src={paymentAccepted} alt="paymentAccepted" />
+                        </div>
                         <div className="d-flex flex-column-reverse flex-sm-row align-items-sm-center justify-content-between mt-4">
                             <span className='position-relative'>
                                 <a href="/" className='mt-3 z_index_10 mt-sm-0 sign_up_btn bg_green fs_sm fw-semibold text-white d-inline-block text-nowrap'>Sign up</a>

@@ -30,7 +30,7 @@ const UsersReview = () => {
         ]
     };
     return (
-        <section className='my-5 py-5'>
+        <section className='mt-5 pt-5 py-lg-5'>
             <Container className='custom_container position-relative'>
                 <div className='people_reviews_section_positon_box position-absolute'></div>
                 <div className='people_reviews_section_positon_box2 position-absolute'></div>
@@ -96,13 +96,13 @@ const UsersReview = () => {
 
 
                 <Row className='py-5 my-5 flex-column-reverse flex-lg-row'>
-                    <Col lg={6} className='mt-5 text-center d-flex align-items-center flex-column text-lg-start align-items-lg-start'>
+                    <Col lg={6} className='mt-5 text-center d-flex align-items-center flex-column text-lg-start align-items-lg-start' data-aos="fade-up-right">
                         <h2 className='fs_3xl fw-semibold'>Your Target Market</h2>
                         <p className='fs_sm fw-normal mb-0 d-flex align-items-center mt-3'><img className='pe-2' src={earthImg} alt="earthImg" />Nationwide coverageNationwide coverage</p>
                         <p className='fs_sm fw-normal text_dark mt-2'>It is a long established fact that a reader will be<span className='d-lg-block'> distracted by the readable content of a page when</span> <span className='d-lg-block'>looking at its layout. The point of using Lorem Ipsum is</span> that it has a more-or-less normal distribution of letters.</p>
                         <a href="#" className='fs_sm fw-normal getstarted_btn_slider text-white mt-3 d-inline-block'>Get started</a>
                     </Col>
-                    <Col lg={6} className='d-lg-flex justify-content-lg-end mt-5 position-relative ps-lg-5'>
+                    <Col lg={6} className='d-lg-flex justify-content-lg-end mt-5 position-relative ps-lg-5' data-aos="fade-up-left">
                         <img className='w-100 ps-lg-5' src={worldMap} alt="worldMap" />
                         <img className='position-absolute earth_map_img w-25' src={earthMap} alt="earthMap" />
                     </Col>

@@ -8,7 +8,7 @@ import worldMap from '../assets/img/web/world_map.webp'
 import earthMap from '../assets/img/svg/earth_map_img.svg'
 const UsersReview = () => {
     const mySlider = useRef("");
-    console.log(mySlider)
+    // console.log(mySlider)
     var settings = {
         dots: true,
         infinite: true,

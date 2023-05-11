@@ -9,7 +9,7 @@ import paymentAccepted from '../assets/img/svg/payment_accepted.svg'
 import greenPlusImg from '../assets/img/svg/green_plus_img.svg'
 const HowStarted = () => {
     const [image, setImage] = useState(1);
-    const [activeNumber, setActiveNumber] = useState(1);
+    const [activeNumber, setActiveNumber] = useState(2);
 
     return (
         <section className='bg_darkblue m-3 my-5 py-5 rounded-4'>
@@ -17,10 +17,10 @@ const HowStarted = () => {
                 <h4 className='text-white text-center fs_3xl fw-semibold'>How to get started?</h4>
                 <Row className='py-3 py-sm-5 justify-content-between align-items-center'>
                     <Col md={6} data-aos="fade-right">
-                        <Accordion defaultActiveKey="0">
+                        <Accordion defaultActiveKey="1">
                             <Accordion.Item className='rounded-3' eventKey="0" onClick={() => setActiveNumber(1)}>
                                 <Accordion.Header onClick={() => setImage(1)}>
-                                    <p className={activeNumber === 1 ? "accordion_numbers_active" : "accordion_numbers"}>01</p>
+                                    <p className={activeNumber === 1 ? "accordion_numbers_active" : "accordion_numbers"}>1</p>
                                     <p className='ps-3 ps-lg-5 fs_md fw-semibold text-white'>Provide your information</p>
                                 </Accordion.Header>
                                 <Accordion.Body className='pt-0'>
@@ -29,7 +29,7 @@ const HowStarted = () => {
                             </Accordion.Item>
                             <Accordion.Item className='rounded-3' eventKey="1" onClick={() => setActiveNumber(2)}>
                                 <Accordion.Header onClick={() => setImage(2)}>
-                                    <p className={activeNumber === 2 ? "accordion_numbers_active" : "accordion_numbers"}>02</p>
+                                    <p className={activeNumber === 2 ? "accordion_numbers_active" : "accordion_numbers"}>2</p>
                                     <p className='ps-3 ps-lg-5 fs_md fw-semibold text-white'>Select your location</p>
                                 </Accordion.Header>
                                 <Accordion.Body className='pt-0'>
@@ -38,7 +38,7 @@ const HowStarted = () => {
                             </Accordion.Item>
                             <Accordion.Item className='rounded-3' eventKey="3" onClick={() => setActiveNumber(3)}>
                                 <Accordion.Header onClick={() => setImage(3)}>
-                                    <p className={activeNumber === 3 ? "accordion_numbers_active" : "accordion_numbers"}>03</p>
+                                    <p className={activeNumber === 3 ? "accordion_numbers_active" : "accordion_numbers"}>3</p>
                                     <p className='ps-3 ps-lg-5 fs_md fw-semibold text-white'>Purchase your subscription</p>
                                 </Accordion.Header>
                                 <Accordion.Body className='pt-0'>
@@ -47,7 +47,7 @@ const HowStarted = () => {
                             </Accordion.Item>
                             <Accordion.Item className='rounded-3' eventKey="4" onClick={() => setActiveNumber(4)}>
                                 <Accordion.Header onClick={() => setImage(4)}>
-                                    <p className={activeNumber === 4 ? "accordion_numbers_active" : "accordion_numbers"}>04</p>
+                                    <p className={activeNumber === 4 ? "accordion_numbers_active" : "accordion_numbers"}>4</p>
                                     <p className='ps-3 ps-lg-5 fs_md fw-semibold text-white'>Access your dashboard</p>
                                 </Accordion.Header>
                                 <Accordion.Body className='pt-0'>

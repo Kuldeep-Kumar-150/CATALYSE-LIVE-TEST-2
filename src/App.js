@@ -1,4 +1,7 @@
 import './App.css';
+import { useEffect } from 'react';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import MyHeader from './components/MyHeader';
@@ -15,9 +18,8 @@ import DemoSlider from './components/DemoSlider';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import PreLoader from './components/PreLoader';
-import { useEffect } from 'react';
-import AOS from "aos";
-import "aos/dist/aos.css";
+
+import TempSlider from './components/TempSlider';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -44,6 +46,7 @@ function App() {
         <UsersReview />
         <Footer />
       </div>
+      {/* <TempSlider/> */}
     </div>
   );
 }
